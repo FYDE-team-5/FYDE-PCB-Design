@@ -1703,6 +1703,125 @@ with different sets of drill holes or mounting pads</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MCU-MCP3008-I_P_DIP16-7.62MM_">
+<packages>
+<package name="DIP16-2.54-19.2X7.62MM">
+<wire x1="-10.11" y1="-3.175" x2="-10.11" y2="-1.27" width="0.127" layer="21"/>
+<rectangle x1="-10.1201" y1="-5.00498125" x2="10.11" y2="5" layer="39"/>
+<text x="-0.63525" y="5.71725" size="0.88935" layer="25" ratio="11">&gt;NAME</text>
+<text x="-0.635103125" y="-0.635103125" size="0.88914375" layer="27" ratio="11">&gt;VALUE</text>
+<wire x1="-10.11" y1="1.27" x2="-10.11" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-10.11" y1="1.27" x2="-8.89" y2="0.05" width="0.127" layer="21" curve="-90"/>
+<wire x1="-8.89" y1="-0.05" x2="-10.11" y2="-1.27" width="0.127" layer="21" curve="-90"/>
+<wire x1="-10.11" y1="3.175" x2="-9.525" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-10.11" y1="-3.175" x2="-9.8" y2="-3.175" width="0.127" layer="21"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.9" diameter="1.4" shape="square"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.9" diameter="1.4"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.9" diameter="1.4"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.9" diameter="1.4"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.9" diameter="1.4"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.9" diameter="1.4"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.9" diameter="1.4"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.9" diameter="1.4"/>
+<pad name="10" x="6.35" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+<pad name="11" x="3.81" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+<pad name="12" x="1.27" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+<pad name="9" x="8.89" y="3.81" drill="0.9" diameter="1.4" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCU-MCP3008">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-11.43" x2="-10.16" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-11.43" x2="-10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="10.16" x2="-10.16" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="7.62" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="2.54" x2="-10.16" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="0" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="-2.54" x2="-10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="11.43" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="11.43" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="11.43" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="11.43" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="11.43" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="11.43" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="11.43" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="11.43" y2="5.08" width="0.1524" layer="94"/>
+<text x="-10.1717" y="13.9861" size="1.27146875" layer="95" ratio="10">&gt;NAME</text>
+<text x="-3.810140625" y="13.9705" size="1.27005" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="CH0" x="-13.97" y="10.16" length="short" direction="out"/>
+<pin name="CH1" x="-13.97" y="7.62" length="short" direction="in"/>
+<pin name="CH2" x="-13.97" y="5.08" length="short" direction="out"/>
+<pin name="CH3" x="-13.97" y="2.54" length="short" direction="in"/>
+<pin name="CH4" x="-13.97" y="0" length="short" direction="in"/>
+<pin name="CH5" x="-13.97" y="-2.54" length="short" direction="in"/>
+<pin name="CH6" x="-13.97" y="-5.08" length="short" direction="out"/>
+<pin name="CH7" x="-13.97" y="-7.62" length="short" direction="in"/>
+<pin name="DGND" x="13.97" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="SHDN/!CS" x="13.97" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="DIN" x="13.97" y="-2.54" length="short" direction="in" rot="R180"/>
+<pin name="DOUT" x="13.97" y="0" length="short" direction="in" rot="R180"/>
+<pin name="CLK" x="13.97" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="AGND" x="13.97" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="VREF" x="13.97" y="7.62" length="short" direction="in" rot="R180"/>
+<pin name="VDD" x="13.97" y="10.16" length="short" direction="sup" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MCU-MCP3008-I/P(DIP16-7.62MM)" prefix="U">
+<description>310990040</description>
+<gates>
+<gate name="G$1" symbol="MCU-MCP3008" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP16-2.54-19.2X7.62MM">
+<connects>
+<connect gate="G$1" pin="AGND" pad="14"/>
+<connect gate="G$1" pin="CH0" pad="1"/>
+<connect gate="G$1" pin="CH1" pad="2"/>
+<connect gate="G$1" pin="CH2" pad="3"/>
+<connect gate="G$1" pin="CH3" pad="4"/>
+<connect gate="G$1" pin="CH4" pad="5"/>
+<connect gate="G$1" pin="CH5" pad="6"/>
+<connect gate="G$1" pin="CH6" pad="7"/>
+<connect gate="G$1" pin="CH7" pad="8"/>
+<connect gate="G$1" pin="CLK" pad="13"/>
+<connect gate="G$1" pin="DGND" pad="9"/>
+<connect gate="G$1" pin="DIN" pad="11"/>
+<connect gate="G$1" pin="DOUT" pad="12"/>
+<connect gate="G$1" pin="SHDN/!CS" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="16"/>
+<connect gate="G$1" pin="VREF" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" 10 Bit Analog to Digital Converter 4, 8 Input 1 SAR 16-PDIP "/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MP" value="MCP3008-I/P"/>
+<attribute name="PACKAGE" value="DIP-16 Microchip"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1716,6 +1835,7 @@ with different sets of drill holes or mounting pads</description>
 <part name="P1" library="SEN-11574" deviceset="SEN-11574" device=""/>
 <part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_FP"/>
 <part name="U$1" library="Adafruit-PowerBoost-FYDE" deviceset="ADAFRUITPOWERBOOSTER(FYDE)" device=""/>
+<part name="U1" library="MCU-MCP3008-I_P_DIP16-7.62MM_" deviceset="MCU-MCP3008-I/P(DIP16-7.62MM)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1732,49 +1852,14 @@ with different sets of drill holes or mounting pads</description>
 <plain>
 </plain>
 <instances>
-<instance part="P1" gate="G$1" x="22.86" y="160.02"/>
-<instance part="X1" gate="G$1" x="71.12" y="147.32"/>
-<instance part="U$1" gate="G$1" x="-45.72" y="109.22"/>
+<instance part="P1" gate="G$1" x="-27.94" y="66.04"/>
+<instance part="X1" gate="G$1" x="73.66" y="104.14"/>
+<instance part="U$1" gate="G$1" x="10.16" y="152.4" rot="R90"/>
+<instance part="U1" gate="G$1" x="-96.52" y="104.14"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="5V"/>
-<wire x1="-55.88" y1="119.38" x2="-78.74" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
-<wire x1="-55.88" y1="129.54" x2="-76.2" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="LBO"/>
-<wire x1="-55.88" y1="139.7" x2="-73.66" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="EN"/>
-<wire x1="-55.88" y1="152.4" x2="-71.12" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="-55.88" y1="162.56" x2="-66.04" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="VBAT"/>
-<wire x1="-55.88" y1="172.72" x2="-63.5" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
