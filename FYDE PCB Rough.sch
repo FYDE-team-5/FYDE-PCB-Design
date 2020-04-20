@@ -1822,6 +1822,94 @@ with different sets of drill holes or mounting pads</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Originally created by librarian@cadsoft.de&lt;p&gt;Modifications and additions by Bob Starr (rtzaudio@mindspring.com)&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-2.2225" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply0">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Copyright (C) 2007, Bob Starr&lt;br&gt;http://www.bobstarr.net&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+3V3A">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+3V3A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5V">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3V3A" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1833,33 +1921,165 @@ with different sets of drill holes or mounting pads</description>
 </classes>
 <parts>
 <part name="P1" library="SEN-11574" deviceset="SEN-11574" device=""/>
-<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_FP"/>
 <part name="U$1" library="Adafruit-PowerBoost-FYDE" deviceset="ADAFRUITPOWERBOOSTER(FYDE)" device=""/>
 <part name="U1" library="MCU-MCP3008-I_P_DIP16-7.62MM_" deviceset="MCU-MCP3008-I/P(DIP16-7.62MM)" device=""/>
+<part name="GND1" library="supply" deviceset="GND" device=""/>
+<part name="GND2" library="supply" deviceset="GND" device=""/>
+<part name="V1" library="supply0" deviceset="+3V3A" device=""/>
+<part name="V2" library="supply0" deviceset="+3V3A" device=""/>
+<part name="GND3" library="supply" deviceset="GND" device=""/>
+<part name="GND4" library="supply" deviceset="GND" device=""/>
+<part name="V3" library="supply0" deviceset="+5V" device=""/>
+<part name="V4" library="supply0" deviceset="+5V" device=""/>
+<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_HDC"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="P1" gate="G$1" x="-99.06" y="96.52"/>
+<instance part="U$1" gate="G$1" x="-50.8" y="88.9"/>
+<instance part="U1" gate="G$1" x="-101.6" y="185.42"/>
+<instance part="GND1" gate="1" x="-114.3" y="132.08"/>
+<instance part="GND2" gate="1" x="-68.58" y="187.96"/>
+<instance part="V1" gate="G$1" x="-137.16" y="177.8"/>
+<instance part="V2" gate="G$1" x="-73.66" y="200.66"/>
+<instance part="GND3" gate="1" x="-83.82" y="172.72"/>
+<instance part="GND4" gate="1" x="-109.22" y="106.68"/>
+<instance part="V3" gate="1" x="-116.84" y="99.06" rot="R90"/>
+<instance part="V4" gate="1" x="-149.86" y="177.8"/>
+<instance part="X1" gate="G$1" x="-149.86" y="142.24"/>
 </instances>
 <busses>
 </busses>
 <nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="P1" gate="G$1" x="-27.94" y="66.04"/>
-<instance part="X1" gate="G$1" x="73.66" y="104.14"/>
-<instance part="U$1" gate="G$1" x="10.16" y="152.4" rot="R90"/>
-<instance part="U1" gate="G$1" x="-96.52" y="104.14"/>
-</instances>
-<busses>
-</busses>
-<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-114.3" y1="137.16" x2="-114.3" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-127" y1="137.16" x2="-114.3" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GND"/>
+<wire x1="-127" y1="137.16" x2="-127" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-127" y1="101.6" x2="-149.86" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="AGND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="-87.63" y1="190.5" x2="-68.58" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="DGND"/>
+<wire x1="-87.63" y1="177.8" x2="-83.82" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="-83.82" y1="177.8" x2="-83.82" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="P1" gate="G$1" pin="GND"/>
+<wire x1="-109.22" y1="109.22" x2="-104.14" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="109.22" x2="-104.14" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3V3A" class="0">
+<segment>
+<pinref part="V1" gate="G$1" pin="+3V3A"/>
+<pinref part="X1" gate="G$1" pin="3V3"/>
+<wire x1="-137.16" y1="175.26" x2="-137.16" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="170.18" x2="-144.78" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="-73.66" y1="195.58" x2="-87.63" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VREF"/>
+<wire x1="-73.66" y1="195.58" x2="-73.66" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="193.04" x2="-87.63" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="V2" gate="G$1" pin="+3V3A"/>
+<wire x1="-73.66" y1="198.12" x2="-73.66" y2="195.58" width="0.1524" layer="91"/>
+<junction x="-73.66" y="195.58"/>
+</segment>
+</net>
+<net name="CLK" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="CLK"/>
+<wire x1="-87.63" y1="187.96" x2="-83.82" y2="187.96" width="0.1524" layer="91"/>
+<label x="-83.82" y="187.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-127" y1="154.94" x2="-121.92" y2="154.94" width="0.1524" layer="91"/>
+<label x="-121.92" y="154.94" size="1.778" layer="95" xref="yes"/>
+<wire x1="-127" y1="154.94" x2="-127" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="SPI_SCLK"/>
+<wire x1="-127" y1="152.4" x2="-134.62" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="DOUT"/>
+<wire x1="-87.63" y1="185.42" x2="-55.88" y2="185.42" width="0.1524" layer="91"/>
+<label x="-55.88" y="185.42" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-129.54" y1="157.48" x2="-111.76" y2="157.48" width="0.1524" layer="91"/>
+<label x="-111.76" y="157.48" size="1.778" layer="95" xref="yes"/>
+<wire x1="-129.54" y1="157.48" x2="-129.54" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="SPI_MISO"/>
+<wire x1="-129.54" y1="154.94" x2="-134.62" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="DIN"/>
+<wire x1="-87.63" y1="182.88" x2="-68.58" y2="182.88" width="0.1524" layer="91"/>
+<label x="-68.58" y="182.88" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-132.08" y1="160.02" x2="-99.06" y2="160.02" width="0.1524" layer="91"/>
+<label x="-99.06" y="160.02" size="1.778" layer="95" xref="yes"/>
+<wire x1="-132.08" y1="160.02" x2="-132.08" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="SPI_MOSI"/>
+<wire x1="-132.08" y1="157.48" x2="-134.62" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SIGNAL" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="CH0"/>
+<wire x1="-115.57" y1="195.58" x2="-119.38" y2="195.58" width="0.1524" layer="91"/>
+<label x="-119.38" y="195.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="P1" gate="G$1" pin="SIGNAL"/>
+<wire x1="-104.14" y1="93.98" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
+<label x="-111.76" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="P1" gate="G$1" pin="V+"/>
+<wire x1="-104.14" y1="96.52" x2="-109.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="96.52" x2="-109.22" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="99.06" x2="-114.3" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="V3" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="V4" gate="1" pin="+5V"/>
+<pinref part="X1" gate="G$1" pin="5V0"/>
+<wire x1="-149.86" y1="175.26" x2="-149.86" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="170.18" x2="-154.94" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CS" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="GPIO05"/>
+<wire x1="-165.1" y1="134.62" x2="-170.18" y2="134.62" width="0.1524" layer="91"/>
+<label x="-170.18" y="134.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SHDN/!CS"/>
+<wire x1="-87.63" y1="180.34" x2="-83.82" y2="180.34" width="0.1524" layer="91"/>
+<label x="-83.82" y="180.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
