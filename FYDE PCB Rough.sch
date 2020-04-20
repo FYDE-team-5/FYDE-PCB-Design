@@ -1003,13 +1003,13 @@ Official outline with cutout for display flex connector</description>
 <package name="RASPI_BOARD_B+HAT_DF_CF">
 <description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
 Official outline with cutouts for display &amp;amp; camera flex connector</description>
-<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="3" y1="0" x2="62" y2="0" width="0" layer="20"/>
-<wire x1="62" y1="0" x2="65" y2="3" width="0" layer="20" curve="90"/>
-<wire x1="65" y1="3" x2="65" y2="53" width="0" layer="20"/>
-<wire x1="65" y1="53" x2="62" y2="56" width="0" layer="20" curve="90"/>
-<wire x1="62" y1="56" x2="3" y2="56" width="0" layer="20"/>
-<wire x1="3" y1="56" x2="0" y2="53" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="21" curve="90"/>
+<wire x1="3" y1="0" x2="62" y2="0" width="0" layer="21"/>
+<wire x1="62" y1="0" x2="65" y2="3" width="0" layer="21" curve="90"/>
+<wire x1="65" y1="3" x2="65" y2="53" width="0" layer="21"/>
+<wire x1="65" y1="53" x2="62" y2="56" width="0" layer="21" curve="90"/>
+<wire x1="62" y1="56" x2="3" y2="56" width="0" layer="21"/>
+<wire x1="3" y1="56" x2="0" y2="53" width="0" layer="21" curve="90"/>
 <hole x="3.5" y="3.5" drill="2.75"/>
 <hole x="3.5" y="52.5" drill="2.75"/>
 <hole x="61.5" y="3.5" drill="2.75"/>
@@ -1069,9 +1069,9 @@ Official outline with cutouts for display &amp;amp; camera flex connector</descr
 <wire x1="8.6875" y1="49.6425" x2="8.6875" y2="49.96" width="0.127" layer="21"/>
 <text x="8.0525" y="48.3725" size="1.016" layer="21" font="vector" ratio="10">1</text>
 <circle x="3.5" y="3.5" radius="3.2" width="0.127" layer="52"/>
-<circle x="61.5" y="3.5" radius="3.2" width="0.127" layer="52"/>
+<circle x="61.5" y="3.5" radius="3.2" width="0.127" layer="21"/>
 <circle x="61.5" y="52.5" radius="3.2" width="0.127" layer="52"/>
-<circle x="3.5" y="52.5" radius="3.2" width="0.127" layer="52"/>
+<circle x="3.5" y="52.5" radius="3.2" width="0.127" layer="21"/>
 <circle x="3.5" y="52.5" radius="3.2" width="0" layer="29"/>
 <circle x="61.5" y="52.5" radius="3.2" width="0" layer="29"/>
 <circle x="3.5" y="3.5" radius="3.2" width="0" layer="29"/>
@@ -1080,22 +1080,22 @@ Official outline with cutouts for display &amp;amp; camera flex connector</descr
 <circle x="61.5" y="52.5" radius="3.2" width="0" layer="30"/>
 <circle x="61.5" y="3.5" radius="3.2" width="0" layer="30"/>
 <circle x="3.5" y="3.5" radius="3.2" width="0" layer="30"/>
-<wire x1="0" y1="3" x2="0" y2="17.5" width="0" layer="20"/>
-<wire x1="0" y1="17.5" x2="2" y2="19.5" width="0" layer="20" curve="-90"/>
-<wire x1="2" y1="19.5" x2="3" y2="19.5" width="0" layer="20"/>
-<wire x1="3" y1="19.5" x2="5" y2="21.5" width="0" layer="20" curve="90"/>
-<wire x1="5" y1="21.5" x2="5" y2="34.5" width="0" layer="20"/>
-<wire x1="5" y1="34.5" x2="3" y2="36.5" width="0" layer="20" curve="90"/>
-<wire x1="3" y1="36.5" x2="2" y2="36.5" width="0" layer="20"/>
-<wire x1="2" y1="36.5" x2="0" y2="38.5" width="0" layer="20" curve="-90"/>
-<wire x1="0" y1="38.5" x2="0" y2="53" width="0" layer="20"/>
+<wire x1="0" y1="3" x2="0" y2="17.5" width="0" layer="21"/>
+<wire x1="0" y1="17.5" x2="2" y2="19.5" width="0" layer="21" curve="-90"/>
+<wire x1="2" y1="19.5" x2="3" y2="19.5" width="0" layer="21"/>
+<wire x1="3" y1="19.5" x2="5" y2="21.5" width="0" layer="21" curve="90"/>
+<wire x1="5" y1="21.5" x2="5" y2="34.5" width="0" layer="21"/>
+<wire x1="5" y1="34.5" x2="3" y2="36.5" width="0" layer="21" curve="90"/>
+<wire x1="3" y1="36.5" x2="2" y2="36.5" width="0" layer="21"/>
+<wire x1="2" y1="36.5" x2="0" y2="38.5" width="0" layer="21" curve="-90"/>
+<wire x1="0" y1="38.5" x2="0" y2="53" width="0" layer="21"/>
 <wire x1="44" y1="4" x2="45" y2="3" width="0" layer="20" curve="90"/>
 <wire x1="45" y1="3" x2="46" y2="4" width="0" layer="20" curve="90"/>
 <wire x1="46" y1="4" x2="46" y2="19" width="0" layer="20"/>
 <wire x1="46" y1="19" x2="45" y2="20" width="0" layer="20" curve="90"/>
 <wire x1="45" y1="20" x2="44" y2="19" width="0" layer="20" curve="90"/>
 <wire x1="44" y1="19" x2="44" y2="4" width="0" layer="20"/>
-<text x="4" y="21" size="1.016" layer="51" font="vector" ratio="10" rot="R90">Display Flex Slot</text>
+<text x="4" y="21" size="1.016" layer="21" font="vector" ratio="10" rot="R90">Display Flex Slot</text>
 <text x="45.5" y="4.75" size="1.016" layer="51" font="vector" ratio="10" rot="R90">Camera Flex Slot</text>
 </package>
 </packages>
