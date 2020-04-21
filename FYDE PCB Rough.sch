@@ -92,6 +92,8 @@
 <layer number="111" name="MPL" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="sName" color="7" fill="1" visible="no" active="yes"/>
@@ -1634,75 +1636,6 @@ with different sets of drill holes or mounting pads</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Adafruit-PowerBoost-FYDE">
-<packages>
-<package name="ADAFRUITPOWERBOOSTER(FYDE)">
-<wire x1="0" y1="20.32" x2="0" y2="2.54" width="0" layer="21"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="0" width="0" layer="21" curve="90"/>
-<wire x1="2.54" y1="0" x2="27.432" y2="0" width="0" layer="21"/>
-<wire x1="27.432" y1="0" x2="29.21" y2="2.54" width="0" layer="21" curve="90"/>
-<wire x1="29.21" y1="2.54" x2="29.21" y2="20.32" width="0" layer="21"/>
-<wire x1="29.21" y1="20.32" x2="27.432" y2="22.86" width="0" layer="21" curve="90"/>
-<wire x1="27.432" y1="22.86" x2="2.54" y2="22.86" width="0" layer="21"/>
-<wire x1="2.54" y1="22.86" x2="0" y2="20.32" width="0" layer="21" curve="90"/>
-<pad name="1" x="6.858" y="21.209" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="2" x="9.398" y="21.209" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="3" x="11.938" y="21.209" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="4" x="14.478" y="21.209" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="5" x="17.018" y="21.209" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="6" x="19.558" y="21.209" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<text x="5.5118" y="23.0378" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="5.588" y="18.034" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="16.764" y1="20.955" x2="17.272" y2="21.463" layer="51"/>
-<rectangle x1="14.224" y1="20.955" x2="14.732" y2="21.463" layer="51"/>
-<rectangle x1="11.684" y1="20.955" x2="12.192" y2="21.463" layer="51"/>
-<rectangle x1="9.144" y1="20.955" x2="9.652" y2="21.463" layer="51"/>
-<rectangle x1="6.604" y1="20.955" x2="7.112" y2="21.463" layer="51"/>
-<rectangle x1="19.304" y1="20.955" x2="19.812" y2="21.463" layer="51"/>
-<hole x="2.794" y="20.32" drill="2.5"/>
-<hole x="2.54" y="2.54" drill="2.5"/>
-<text x="2.159" y="9.906" size="1.778" layer="21">Power Booster (FYDE)</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ADAFRUITPOWERBOOSTER(FYDE)">
-<wire x1="-10.16" y1="0" x2="53.34" y2="0" width="0.1524" layer="94"/>
-<wire x1="53.34" y1="0" x2="53.34" y2="76.2" width="0.1524" layer="94"/>
-<wire x1="53.34" y1="76.2" x2="-10.16" y2="76.2" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="76.2" x2="-10.16" y2="0" width="0.1524" layer="94"/>
-<pin name="VBAT" x="-10.16" y="63.5" length="middle" rot="R180"/>
-<pin name="5V" x="-10.16" y="10.16" length="middle" rot="R180"/>
-<pin name="GND" x="-10.16" y="53.34" length="middle" rot="R180"/>
-<pin name="GND2" x="-10.16" y="20.32" length="middle" rot="R180"/>
-<pin name="EN" x="-10.16" y="43.18" length="middle" rot="R180"/>
-<pin name="LBO" x="-10.16" y="30.48" length="middle" rot="R180"/>
-<text x="7.62" y="45.72" size="1.778" layer="94">Power Booster (FYDE)</text>
-<text x="10.16" y="27.94" size="1.778" layer="94">Power Booster (FYDE)</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ADAFRUITPOWERBOOSTER(FYDE)">
-<gates>
-<gate name="G$1" symbol="ADAFRUITPOWERBOOSTER(FYDE)" x="10.16" y="0"/>
-</gates>
-<devices>
-<device name="" package="ADAFRUITPOWERBOOSTER(FYDE)">
-<connects>
-<connect gate="G$1" pin="5V" pad="6"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="GND2" pad="5"/>
-<connect gate="G$1" pin="LBO" pad="4"/>
-<connect gate="G$1" pin="VBAT" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MCU-MCP3008-I_P_DIP16-7.62MM_">
 <packages>
 <package name="DIP16-2.54-19.2X7.62MM">
@@ -1910,6 +1843,193 @@ with different sets of drill holes or mounting pads</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MT3608">
+<packages>
+<package name="MT3608">
+<wire x1="0" y1="0" x2="0" y2="17.018" width="0.1524" layer="21"/>
+<wire x1="0" y1="17.018" x2="29.972" y2="17.018" width="0.1524" layer="21"/>
+<wire x1="29.972" y1="17.018" x2="29.972" y2="0" width="0.1524" layer="21"/>
+<wire x1="29.972" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<pad name="P$1" x="2.032" y="15.494" drill="1" shape="square"/>
+<pad name="P$2" x="2.032" y="1.524" drill="1" shape="square"/>
+<pad name="P$3" x="28.194" y="15.494" drill="1" shape="square"/>
+<pad name="P$4" x="28.194" y="1.524" drill="1" shape="square"/>
+<text x="3.556" y="14.224" size="1.778" layer="21">VIN+</text>
+<text x="3.556" y="0.762" size="1.778" layer="21">VIN-</text>
+<text x="19.558" y="0.762" size="1.778" layer="21">VOUT-</text>
+<text x="19.05" y="14.478" size="1.778" layer="21">VOUT+</text>
+<text x="6.858" y="7.366" size="2.54" layer="21">[MT3608]</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MT3608">
+<wire x1="0" y1="0" x2="0" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="0" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="22.86" x2="50.8" y2="0" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="VIN" x="-5.08" y="17.78" length="middle"/>
+<pin name="GND" x="-5.08" y="5.08" length="middle"/>
+<pin name="VOUT" x="55.88" y="17.78" length="middle" rot="R180"/>
+<pin name="GND'" x="55.88" y="5.08" length="middle" rot="R180"/>
+<text x="17.78" y="12.7" size="2.54" layer="94">[MT3608]</text>
+<text x="7.62" y="7.62" size="2.54" layer="94">BOOST CONVERTOR</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MT3608">
+<gates>
+<gate name="G$1" symbol="MT3608" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MT3608">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="GND'" pad="P$4"/>
+<connect gate="G$1" pin="VIN" pad="P$1"/>
+<connect gate="G$1" pin="VOUT" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="JST-2-SMD" urn="urn:adsk.eagle:footprint:37657/1" library_version="1">
+<description>&lt;h3&gt;JST-Right Angle Male Header SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: 2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://www.4uconnector.com/online/object/4udrawing/20404.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;li&gt;JST_2MM_MALE&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-4" y1="-1" x2="-4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-3.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-4.5" x2="-3.2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-2" x2="-2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="2" y1="-2" x2="3.2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-2" x2="3.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-4.5" x2="4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4.5" x2="4" y2="-1" width="0.2032" layer="21"/>
+<wire x1="2" y1="3" x2="-2" y2="3" width="0.2032" layer="21"/>
+<smd name="1" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="2" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-1.397" y="1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="0.635" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="JST-2-SMD" urn="urn:adsk.eagle:package:38042/1" type="box" library_version="1">
+<description>JST-Right Angle Male Header SMT
+Specifications:
+Pin count: 2
+Pin pitch: 2mm
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_02
+JST_2MM_MALE
+</description>
+<packageinstances>
+<packageinstance name="JST-2-SMD"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="JST_2MM_MALE" urn="urn:adsk.eagle:symbol:37934/1" library_version="1">
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.778" x2="-2.54" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.302" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="3.302" width="0.254" layer="94"/>
+<wire x1="5.08" y1="3.302" x2="5.08" y2="1.778" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.778" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="4.064" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-2.54" x2="4.064" y2="0" width="0.254" layer="94"/>
+<wire x1="4.064" y1="0" x2="-1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.778" x2="-1.778" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="1.778" x2="-1.778" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="3.302" x2="-2.54" y2="3.302" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.778" x2="4.318" y2="1.778" width="0.254" layer="94"/>
+<wire x1="4.318" y1="1.778" x2="4.318" y2="3.302" width="0.254" layer="94"/>
+<wire x1="4.318" y1="3.302" x2="5.08" y2="3.302" width="0.254" layer="94"/>
+<wire x1="2.032" y1="1.016" x2="3.048" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.508" x2="2.54" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="1.524" width="0.254" layer="94"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="middle" rot="R90"/>
+<pin name="+" x="2.54" y="-5.08" visible="off" length="middle" rot="R90"/>
+<pin name="PAD2" x="5.08" y="2.54" visible="off" length="point" rot="R90"/>
+<pin name="PAD1" x="-2.54" y="2.54" visible="off" length="point" rot="R90"/>
+<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JST_2MM_MALE" urn="urn:adsk.eagle:component:38321/1" prefix="J" uservalue="yes" library_version="1">
+<description>&lt;h3&gt;JST 2MM MALE RA CONNECTOR&lt;/h3&gt;
+Two pin, compact surface mount connector. Commonly used as a battery input connection point. We really like the solid locking feeling and high current rating on these small connectors. We use these all the time as battery connectors. Mates to single-cell LiPo batteries.
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Here is the connector we sell at SparkFun:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8612"&gt;JST Right Angle Connector - White&lt;/a&gt; (PRT-08612)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sparkfun.com/datasheets/Prototyping/Connectors/JST-Horizontal.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;It was used on these SparkFun products:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11214"&gt;SparkFun MOSFET Power Controller&lt;/a&gt; (PRT-11214)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13777"&gt;SparkFun Battery Babysitter - LiPo Battery Manager&lt;/a&gt; (PRT-13777)&lt;/li&gt;
+&lt;li&gt;And many, many others that required a lipo battery connection.&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="JST_2MM_MALE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-2-SMD">
+<connects>
+<connect gate="G$1" pin="+" pad="2"/>
+<connect gate="G$1" pin="-" pad="1"/>
+<connect gate="G$1" pin="PAD1" pad="NC1"/>
+<connect gate="G$1" pin="PAD2" pad="NC2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38042/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11443"/>
+<attribute name="SF_ID" value="PRT-08612" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1921,7 +2041,6 @@ with different sets of drill holes or mounting pads</description>
 </classes>
 <parts>
 <part name="P1" library="SEN-11574" deviceset="SEN-11574" device=""/>
-<part name="U$1" library="Adafruit-PowerBoost-FYDE" deviceset="ADAFRUITPOWERBOOSTER(FYDE)" device=""/>
 <part name="U1" library="MCU-MCP3008-I_P_DIP16-7.62MM_" deviceset="MCU-MCP3008-I/P(DIP16-7.62MM)" device=""/>
 <part name="GND1" library="supply" deviceset="GND" device=""/>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
@@ -1932,6 +2051,14 @@ with different sets of drill holes or mounting pads</description>
 <part name="V3" library="supply0" deviceset="+5V" device=""/>
 <part name="V4" library="supply0" deviceset="+5V" device=""/>
 <part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_HDC"/>
+<part name="U$2" library="MT3608" deviceset="MT3608" device=""/>
+<part name="GND6" library="supply" deviceset="GND" device=""/>
+<part name="GND5" library="supply" deviceset="GND" device=""/>
+<part name="V5" library="supply0" deviceset="+5V" device=""/>
+<part name="V6" library="supply0" deviceset="+3V3A" device=""/>
+<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="JST_2MM_MALE" device="" package3d_urn="urn:adsk.eagle:package:38042/1"/>
+<part name="V7" library="supply0" deviceset="+3V3A" device=""/>
+<part name="GND7" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1939,7 +2066,6 @@ with different sets of drill holes or mounting pads</description>
 </plain>
 <instances>
 <instance part="P1" gate="G$1" x="-99.06" y="96.52"/>
-<instance part="U$1" gate="G$1" x="-50.8" y="88.9"/>
 <instance part="U1" gate="G$1" x="-101.6" y="185.42"/>
 <instance part="GND1" gate="1" x="-114.3" y="132.08"/>
 <instance part="GND2" gate="1" x="-68.58" y="187.96"/>
@@ -1950,6 +2076,14 @@ with different sets of drill holes or mounting pads</description>
 <instance part="V3" gate="1" x="-116.84" y="99.06" rot="R90"/>
 <instance part="V4" gate="1" x="-149.86" y="177.8"/>
 <instance part="X1" gate="G$1" x="-149.86" y="142.24"/>
+<instance part="U$2" gate="G$1" x="-78.74" y="127"/>
+<instance part="GND6" gate="1" x="-93.98" y="132.08" rot="R270"/>
+<instance part="GND5" gate="1" x="-10.16" y="132.08" rot="R90"/>
+<instance part="V5" gate="1" x="-15.24" y="144.78" rot="R270"/>
+<instance part="V6" gate="G$1" x="-93.98" y="144.78" rot="R90"/>
+<instance part="J1" gate="G$1" x="-58.42" y="106.68" rot="R180"/>
+<instance part="V7" gate="G$1" x="-66.04" y="114.3" rot="R90"/>
+<instance part="GND7" gate="1" x="-53.34" y="114.3" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1980,6 +2114,22 @@ with different sets of drill holes or mounting pads</description>
 <wire x1="-109.22" y1="109.22" x2="-104.14" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="109.22" x2="-104.14" y2="99.06" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="-91.44" y1="132.08" x2="-83.82" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="U$2" gate="G$1" pin="GND'"/>
+<wire x1="-12.7" y1="132.08" x2="-22.86" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="-"/>
+<wire x1="-55.88" y1="114.3" x2="-55.88" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="111.76" x2="-58.42" y2="111.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3A" class="0">
 <segment>
@@ -1997,6 +2147,17 @@ with different sets of drill holes or mounting pads</description>
 <pinref part="V2" gate="G$1" pin="+3V3A"/>
 <wire x1="-73.66" y1="198.12" x2="-73.66" y2="195.58" width="0.1524" layer="91"/>
 <junction x="-73.66" y="195.58"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<pinref part="V6" gate="G$1" pin="+3V3A"/>
+<wire x1="-83.82" y1="144.78" x2="-91.44" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="V7" gate="G$1" pin="+3V3A"/>
+<pinref part="J1" gate="G$1" pin="+"/>
+<wire x1="-63.5" y1="114.3" x2="-60.96" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="114.3" x2="-60.96" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -2067,6 +2228,11 @@ with different sets of drill holes or mounting pads</description>
 <wire x1="-149.86" y1="175.26" x2="-149.86" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="170.18" x2="-154.94" y2="170.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="V5" gate="1" pin="+5V"/>
+<pinref part="U$2" gate="G$1" pin="VOUT"/>
+<wire x1="-17.78" y1="144.78" x2="-22.86" y2="144.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CS" class="0">
 <segment>
@@ -2083,6 +2249,36 @@ with different sets of drill holes or mounting pads</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,-115.57,193.04,U1,CH1,,,,"/>
+<approved hash="202,1,-115.57,187.96,U1,CH3,,,,"/>
+<approved hash="202,1,-115.57,185.42,U1,CH4,,,,"/>
+<approved hash="202,1,-115.57,182.88,U1,CH5,,,,"/>
+<approved hash="202,1,-115.57,177.8,U1,CH7,,,,"/>
+<approved hash="103,1,-165.1,134.62,X1,GPIO05,CS,,,"/>
+<approved hash="208,1,-114.3,134.62,GND,sup,,,,"/>
+<approved hash="208,1,-68.58,190.5,GND,sup,,,,"/>
+<approved hash="208,1,-87.63,177.8,GND,out,,,,"/>
+<approved hash="208,1,-83.82,175.26,GND,sup,,,,"/>
+<approved hash="208,1,-109.22,109.22,GND,sup,,,,"/>
+</errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
