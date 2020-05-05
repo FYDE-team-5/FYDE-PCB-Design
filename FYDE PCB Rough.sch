@@ -95,7 +95,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="sName" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -105,9 +108,17 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -2030,6 +2041,35 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </deviceset>
 </devicesets>
 </library>
+<library name="Airquality_Sensor" urn="urn:adsk.eagle:library:16015176">
+<description>Generated from &lt;b&gt;Air_Quality_Sensor.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VBAT" urn="urn:adsk.eagle:symbol:15955312/1" library_version="1">
+<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<pin name="VBAT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VBAT" urn="urn:adsk.eagle:component:15955337/1" library_version="1">
+<description>VBAT Supply Sumbol</description>
+<gates>
+<gate name="G$1" symbol="VBAT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2055,10 +2095,10 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <part name="GND6" library="supply" deviceset="GND" device=""/>
 <part name="GND5" library="supply" deviceset="GND" device=""/>
 <part name="V5" library="supply0" deviceset="+5V" device=""/>
-<part name="V6" library="supply0" deviceset="+3V3A" device=""/>
-<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="JST_2MM_MALE" device="" package3d_urn="urn:adsk.eagle:package:38042/1"/>
-<part name="V7" library="supply0" deviceset="+3V3A" device=""/>
-<part name="GND7" library="supply" deviceset="GND" device=""/>
+<part name="U$3" library="Airquality_Sensor" library_urn="urn:adsk.eagle:library:16015176" deviceset="VBAT" device=""/>
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="JST_2MM_MALE" device="" package3d_urn="urn:adsk.eagle:package:38042/1"/>
+<part name="GND8" library="supply" deviceset="GND" device=""/>
+<part name="U$4" library="Airquality_Sensor" library_urn="urn:adsk.eagle:library:16015176" deviceset="VBAT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2080,10 +2120,10 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <instance part="GND6" gate="1" x="-93.98" y="132.08" rot="R270"/>
 <instance part="GND5" gate="1" x="-10.16" y="132.08" rot="R90"/>
 <instance part="V5" gate="1" x="-15.24" y="144.78" rot="R270"/>
-<instance part="V6" gate="G$1" x="-93.98" y="144.78" rot="R90"/>
-<instance part="J1" gate="G$1" x="-58.42" y="106.68" rot="R180"/>
-<instance part="V7" gate="G$1" x="-66.04" y="114.3" rot="R90"/>
-<instance part="GND7" gate="1" x="-53.34" y="114.3" rot="R90"/>
+<instance part="U$3" gate="G$1" x="-93.98" y="144.78" rot="R90"/>
+<instance part="J2" gate="G$1" x="-33.02" y="106.68" rot="R180"/>
+<instance part="GND8" gate="1" x="-27.94" y="114.3" rot="R90"/>
+<instance part="U$4" gate="G$1" x="-40.64" y="114.3" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2125,10 +2165,10 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <wire x1="-12.7" y1="132.08" x2="-22.86" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="-"/>
-<wire x1="-55.88" y1="114.3" x2="-55.88" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="111.76" x2="-58.42" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="-"/>
+<wire x1="-30.48" y1="114.3" x2="-30.48" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="111.76" x2="-33.02" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3A" class="0">
@@ -2147,17 +2187,6 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <pinref part="V2" gate="G$1" pin="+3V3A"/>
 <wire x1="-73.66" y1="198.12" x2="-73.66" y2="195.58" width="0.1524" layer="91"/>
 <junction x="-73.66" y="195.58"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
-<pinref part="V6" gate="G$1" pin="+3V3A"/>
-<wire x1="-83.82" y1="144.78" x2="-91.44" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="V7" gate="G$1" pin="+3V3A"/>
-<pinref part="J1" gate="G$1" pin="+"/>
-<wire x1="-63.5" y1="114.3" x2="-60.96" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="114.3" x2="-60.96" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -2246,21 +2275,52 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <label x="-83.82" y="180.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<wire x1="-83.82" y1="144.78" x2="-91.44" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="VBAT"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="+"/>
+<wire x1="-38.1" y1="114.3" x2="-35.56" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="114.3" x2="-35.56" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VBAT"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="102,1,-87.63,195.58,VDD,+3V3A,,,,"/>
+<approved hash="104,1,-104.14,96.52,P1,V+,+5V,,,"/>
 <approved hash="202,1,-115.57,193.04,U1,CH1,,,,"/>
 <approved hash="202,1,-115.57,187.96,U1,CH3,,,,"/>
 <approved hash="202,1,-115.57,185.42,U1,CH4,,,,"/>
 <approved hash="202,1,-115.57,182.88,U1,CH5,,,,"/>
 <approved hash="202,1,-115.57,177.8,U1,CH7,,,,"/>
+<approved hash="104,1,-154.94,170.18,X1,5V0,+5V,,,"/>
+<approved hash="104,1,-144.78,170.18,X1,3V3,+3V3A,,,"/>
 <approved hash="103,1,-165.1,134.62,X1,GPIO05,CS,,,"/>
 <approved hash="208,1,-114.3,134.62,GND,sup,,,,"/>
 <approved hash="208,1,-68.58,190.5,GND,sup,,,,"/>
 <approved hash="208,1,-87.63,177.8,GND,out,,,,"/>
 <approved hash="208,1,-83.82,175.26,GND,sup,,,,"/>
 <approved hash="208,1,-109.22,109.22,GND,sup,,,,"/>
+<approved hash="208,1,-91.44,132.08,GND,sup,,,,"/>
+<approved hash="208,1,-12.7,132.08,GND,sup,,,,"/>
+<approved hash="208,1,-30.48,114.3,GND,sup,,,,"/>
+<approved hash="113,1,-34.29,107.178,J2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
